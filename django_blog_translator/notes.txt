@@ -1,0 +1,1 @@
+django-admin startproject mysite . (to create project folder)
