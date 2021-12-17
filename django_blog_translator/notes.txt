@@ -1,1 +1,22 @@
 django-admin startproject mysite . (to create project folder)
+
+my_site/__init__.py: code that you want to execute immediately when the webapp starts
+my_site/asgi.py: configuration file. May want to change later on when you deploy the django app in an asgi server
+my_site/settings.py: contains all the settings like timezone, place of static file, etc. 
+my_site/urls.py: has the urls of the projects
+my_site/wsgi.py: same as asgi
+
+manage.py: useful for when you start the app.
+    - python manage.py runserver
+    - python manage.py migrate
+    - python manage.py create superuser
+    - python manage.py startapp <appname>
+
+<appname>/migrations/__init__.py: not to be modified. Database migrations are registered here.
+<appname>/__init__.py: initial code that runs when the app starts
+<appname>/admin.py: code that has to do with de admin interface
+<appname>/apps.py: configuration for the app
+<appname>/models.py: the model contains the db table fields of the web page
+<appname>/views.py: python function or class. Communication between model and template (html)
+<appname>/tests.py: testing code
+    
