@@ -1,3 +1,4 @@
 __pycache__/
 .ipynb_checkpoints/
 *credentials.txt
+django_blog_translator/admin_credentials
