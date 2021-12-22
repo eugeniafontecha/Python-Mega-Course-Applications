@@ -1,0 +1,6 @@
+This is a project
+
+Build a Flask webapp  that expects the user to upload a csv file containing an "Address" column and, 
+when the "Submit" button is pressed, prints a table that contains the same information plus two new 
+columns: Latitude and Longitud.
+If the csv file doesn't have a column named "Address" o "address" it shows an error message to the user.
