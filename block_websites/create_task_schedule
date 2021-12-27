@@ -1,0 +1,22 @@
+On Windows:
+
+Go to Task Scheduler
+Create Task...
+Name the task and check the option "Run with highest privileges"
+Choose the OS on the "Configure for" option
+
+Go to Triggers
+New...
+From "Begin the task" select the "At startup" option
+Ok
+
+Go to Actions
+New...
+Action: Start a program
+Select the .pyw script
+Ok
+
+Go to Conditions
+Uncheck the option "Start the task only if the computer is on AC power"
+
+Ok
