@@ -1,0 +1,17 @@
+webapp deployed with Heroku at https://mybokeh.herokuapp.com/
+
+requirements:
+the following files should exist in the directory:
+requierements.txt (<venv_name>\Scripts\freeze > requirements.txt). List of python packages needed 
+Procfile . (must contain this: web: gunicorn <script_name>:app)
+runtime.txt (must have the python runtime version)
+
+commands:
+$ heroku login
+$ heroku create <app_name>
+$ git init
+$ git add .
+$ git commit -m "first commit"
+$ heroku git:remote --app <app_name>
+$ git push heroku master
+$ heroku open
